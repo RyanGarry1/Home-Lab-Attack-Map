@@ -44,4 +44,26 @@ This setup enabled a powerful, scalable method for identifying known attackers a
 
 ![using KQL to find logs](https://github.com/user-attachments/assets/d1cee703-06a0-452d-ac5a-4ba3550c6763)
 
-<h2></h2>
+<h2>Live Attack Map Workbook Summary</h2>
+
+To visualize threat activity in real time, I created a custom Workbook within Microsoft Sentinel, which served as the front-end for my Live Attack Map.
+
+Using data collected from my Log Analytics Workspace—including logs enriched with geolocation and threat intelligence—I built dynamic visual components inside the Workbook. These included a geospatial map to display the location and source of attacks.
+
+I used Kusto Query Language (KQL) to query log data and correlate it with my imported watchlist of attackers. The results were then fed into interactive visuals within the Workbook, enabling live tracking of attacker IPs across global regions.
+
+This Workbook not only made threat patterns immediately visible but also provided a central place for continuous monitoring, analysis, and response—bringing the Live Attack Map to life directly within the Sentinel dashboard.
+
+![Attack Map](https://github.com/user-attachments/assets/d90c74df-da8c-40ea-bffd-a22932e896fb)
+
+
+<h2>Conclusion & Takeaways</h2>
+
+This project gave me valuable hands-on experience with Microsoft Azure and Microsoft Sentinel, allowing me to build a fully functional Live Attack Map that visualizes real-time threats. Through this process, I learned how to deploy and secure cloud-based infrastructure, manage firewall rules using Network Security Groups, and leverage Sentinel’s powerful tools like Log Analytics, Watchlists, and Workbooks.
+
+Working with Kusto Query Language (KQL) helped me understand how to query and analyze large volumes of security data efficiently. Creating a custom Workbook taught me how to translate raw log data into meaningful, actionable visual insights—an essential skill for any SOC (Security Operations Center) analyst or cybersecurity professional.
+
+In a real-world cybersecurity role, the skills developed through this project would be directly applicable to threat detection, incident response, and security monitoring. The ability to build dashboards, correlate data with known threat indicators, and respond to suspicious activity in real time is critical for protecting organizations from evolving cyber threats. This project also highlighted the importance of automation, visibility, and proactive defense strategies in modern cloud security environments.
+
+
+
